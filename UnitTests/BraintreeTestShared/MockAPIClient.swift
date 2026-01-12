@@ -25,6 +25,7 @@ public class MockAPIClient: BTAPIClient {
     public var postedIsPayPalAppInstalled: Bool? = nil
     public var postedDidEnablePayPalAppSwitch: Bool? = nil
     public var postedDidPayPalServerAttemptAppSwitch: Bool? = nil
+    public var postedFundingSource: String? = nil
     public var postedErrorDescription: String? = nil
     public var postedContextType: String? = nil
     
@@ -112,6 +113,7 @@ public class MockAPIClient: BTAPIClient {
         didEnablePayPalAppSwitch: Bool? = nil,
         didPayPalServerAttemptAppSwitch: Bool? = nil,
         errorDescription: String? = nil,
+        fundingSource: String? = nil,
         merchantExperiment experiment: String? = nil,
         isConfigFromCache: Bool? = nil,
         isVaultRequest: Bool? = nil,
@@ -133,7 +135,8 @@ public class MockAPIClient: BTAPIClient {
         postedDidPayPalServerAttemptAppSwitch = didPayPalServerAttemptAppSwitch
         postedErrorDescription = errorDescription
         postedContextType = contextType
-
+        postedFundingSource = fundingSource
+        
         postedAnalyticsEvents.append(eventName)
     }
 

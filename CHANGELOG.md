@@ -1,5 +1,10 @@
 # Braintree iOS SDK Release Notes
 
+## unreleased
+
+* BraintreePayPal
+    * Pass `fundingSource` to the app switch url link and to analytics events. 
+
 ## 6.41.0 (2025-12-18)
 * BraintreePayPal
   * Add optional `fallbackURLScheme` parameter to `BTPayPalClient` to support custom URL scheme fallback in PayPal App Switch flow
